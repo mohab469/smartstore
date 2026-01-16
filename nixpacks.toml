@@ -1,0 +1,11 @@
+[phases.setup]
+  nixPkgs = ["nodejs-18_x", "python3"]
+
+[phases.install]
+  cmds = ["cd frontend && npm install"]
+
+[phases.build]
+  cmds = ["cd frontend && npm run build"]
+
+[start]
+  cmd = "cd frontend && npm start"

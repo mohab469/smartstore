@@ -1,0 +1,9 @@
+﻿[build]
+builder = ""nixpacks""
+buildCommand = ""cd frontend && npm install && npm run build""
+startCommand = ""cd frontend && npm start""
+
+[deploy]
+numReplicas = 1
+healthcheckPath = ""/""
+healthcheckTimeout = 30
